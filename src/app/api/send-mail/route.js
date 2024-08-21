@@ -15,7 +15,7 @@ export async function POST(request) {
                 <p>Телефон: ${req?.phone}</p>
                 <p>Email: ${req?.email ?? 'Нет'}</p>
                 <p>Информация: ${req?.info ?? 'Нет'}</p>
-                <p>Сообщение пришло с сайта: oms.mskdoctor.ru</p>`,
+                <p>Сообщение пришло с сайта: patient.mskdoctor.ru</p>`,
     }
 
     const transporter = nodemailer.createTransport({
@@ -38,7 +38,7 @@ export async function POST(request) {
         const message2 = {
             from: process.env.ADDRESS_FROM,
             to: [req.email],
-            subject: `Вы оставили заявку на звонок на сайте oms.mskdoctor.ru ${new Date().toLocaleString('ru-RU', {timeZone: 'Europe/Moscow'})}`,
+            subject: `Вы оставили заявку на звонок на сайте patient.mskdoctor.ru ${new Date().toLocaleString('ru-RU', {timeZone: 'Europe/Moscow'})}`,
             html: ` <p>Имя: ${req?.person}</p>
                     <p>Дата рождения: ${req?.dateBirth ?? 'Нет'}</p>
                     <p>Телефон: ${req?.phone}</p>
