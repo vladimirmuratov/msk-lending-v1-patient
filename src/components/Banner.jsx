@@ -33,9 +33,6 @@ export const Banner = () => {
                         lineHeight: 1.1,
                         fontWeight: 600,
                         color: 'var(--black)',
-                        // position: 'absolute',
-                        // top: {xs: '10%', sm: '30%'},
-                        // left: '5%',
                         textShadow: '0px 4px 4px lightgray',
                         marginBottom: {xs: '5px', sm: '10px'}
                     }}>
@@ -51,23 +48,19 @@ export const Banner = () => {
                         color="error"
                         size="large"
                         sx={{
-                            // position: 'absolute',
-                            // top: {xs: '70%', sm: '80%', md: '70%', lg: '60%'},
-                            // left: '5%',
                             display: isMobile ? 'block' : 'none'
                         }}
                     >
                         Позвонить
                     </Button>
-                    : <Typography sx={{
-                        color: 'var(--red)',
-                        // position: 'absolute',
-                        // top: '60%',
-                        // left: '5%',
-                        display: isMobile ? 'none' : 'block',
-                        fontSize: {xs: 16, sm: 32, md: 62},
-                        fontWeight: 600
-                    }}>{phoneNumber}</Typography>
+                    : <Typography
+                        sx={{
+                            color: 'var(--red)',
+                            display: isMobile ? 'none' : 'block',
+                            fontSize: {xs: 16, sm: 32, md: 62},
+                            fontWeight: 600,
+                            textShadow: '0px 4px 4px lightgray',
+                        }}>{phoneNumber}</Typography>
                 }
             </Box>
         </Box>

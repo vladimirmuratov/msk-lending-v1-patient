@@ -4,6 +4,12 @@
     --red: #d32f2f;
     --white: #ffffff;
     --gray: gray;
+
+    --color-primary: #f6aca2;
+    --color-secondary: #f49b90;
+    --color-tertiary: #f28b7d;
+    --color-quaternary: #f07a6a;
+    --color-quinary: #ee6352;
 }
 
 * {
@@ -39,6 +45,10 @@ a {
 .banner {
     width: 100%;
     height: auto;
+
+    /*mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+    /*mask-image: linear-gradient(rgb(0 0 0 / 100%), transparent);*/
+    mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent 100%);
 }
 
 .map {

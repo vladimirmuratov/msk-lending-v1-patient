@@ -1,4 +1,4 @@
-import {Box, IconButton} from '@mui/material'
+import {Box, IconButton, Typography} from '@mui/material'
 import {links} from '@/config'
 import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu'
@@ -50,14 +50,30 @@ export const DesktopHeader = () => {
                      display: 'flex',
                      alignItems: 'center',
                      justifyContent: 'space-between',
+                     gap: '10px',
                      boxShadow: '0 2px 4px lightgray'
                  }}>
                 <Link href="/">
                     <img className="logo" src="/images/logo.png" alt="logo"/>
                 </Link>
-                <Box component="nav" sx={{display: {xs: 'none', sm: 'flex'}, gap: {sm: '10px', md: '15px'}}}>
+
+                {/*<Box component="nav" sx={{display: {xs: 'none', sm: 'flex'}, gap: {sm: '10px', md: '15px'}}}>
                     {links.map((link) => <BaseLink key={link.id} {...link}/>)}
+                </Box>*/}
+
+                <Box>
+                    <Typography
+                    sx={{
+                        color: 'var(--green)',
+                        fontSize: 16,
+                        fontWeight: 500,
+                        textAlign: 'center'
+                    }}
+                    >
+                        Официальный координатор по госпитализации в федеральные медицинские учреждения г.Москвы
+                    </Typography>
                 </Box>
+
                 <IconButton sx={{visibility: 'hidden'}}>
                     <MenuIcon/>
                 </IconButton>
