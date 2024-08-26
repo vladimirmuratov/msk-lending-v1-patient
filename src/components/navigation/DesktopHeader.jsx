@@ -1,5 +1,5 @@
 import {Box, IconButton, Typography} from '@mui/material'
-import {links} from '@/config'
+import {links, phoneNumber} from '@/config'
 import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu'
 import {ContactBanner} from '@/components/ContactBanner'
@@ -74,9 +74,23 @@ export const DesktopHeader = () => {
                     </Typography>
                 </Box>
 
-                <IconButton sx={{visibility: 'hidden'}}>
+                <Box>
+                    <Typography
+                        sx={{
+                            color: 'var(--red)',
+                            fontSize: 18,
+                            fontWeight: 600,
+                            textAlign: 'center',
+                            whiteSpace: 'nowrap'
+                        }}
+                    >
+                        {phoneNumber}
+                    </Typography>
+                </Box>
+
+                {/*<IconButton sx={{visibility: 'hidden'}}>
                     <MenuIcon/>
-                </IconButton>
+                </IconButton>*/}
             </Box>
         </Box>
     )

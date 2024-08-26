@@ -1,7 +1,8 @@
-import {Box, IconButton} from '@mui/material'
+import {Box, IconButton, Typography} from '@mui/material'
 import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu'
 import {ContactBanner} from '@/components/ContactBanner'
+import {phoneNumber} from '@/config'
 
 export const MobileHeader = ({toggleDrawer, isMobile}) => {
     return(
@@ -21,6 +22,21 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                 <Link href="/">
                     <img className="logo" src="/images/logo-white.png" alt="logo"/>
                 </Link>
+
+                <Box>
+                    <Typography
+                        sx={{
+                            color: 'var(--red)',
+                            fontSize: 18,
+                            fontWeight: 600,
+                            textAlign: 'center',
+                            whiteSpace: 'nowrap'
+                        }}
+                    >
+                        {phoneNumber}
+                    </Typography>
+                </Box>
+
                 <IconButton onClick={toggleDrawer(true)}>
                     <MenuIcon sx={{color: '#fff'}}/>
                 </IconButton>
