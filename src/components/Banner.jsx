@@ -19,7 +19,14 @@ export const Banner = () => {
     }, [])
 
     return (
-        <Box component="figure" className="banner-container" sx={{position: 'relative'}}>
+        <Box
+            component="figure"
+            className="banner-container"
+            sx={{
+                position: 'relative',
+                marginBottom: {xs: '25px', sm: '50px'}
+        }}
+        >
             <img className="banner" src="/images/images-for-landings/3.webp" alt="banner"/>
             <Box sx={{
                 position: 'absolute',
