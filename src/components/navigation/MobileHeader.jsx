@@ -18,8 +18,20 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                      alignItems: 'center',
                      justifyContent: 'space-between'
                  }}>
-                <Link href="/">
-                    <img className="logo" src="/images/logo-white.png" alt="logo"/>
+                <Link
+                    href="/"
+                    sx={{
+                        textDecoration: 'none',
+                        color: 'var(--white)'
+                    }}
+                >
+                    {/*<img className="logo" src="/images/logo-white.png" alt="logo"/>*/}
+                    <Typography
+                        sx={{
+                            fontSize: 18,
+                            fontWeight: 600,
+                        }}
+                    >МСК</Typography>
                 </Link>
 
                 <Box>

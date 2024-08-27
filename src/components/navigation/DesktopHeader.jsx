@@ -53,7 +53,7 @@ export const DesktopHeader = () => {
                     boxShadow: '0 2px 4px lightgray'
                 }}>
                 <Link href="/">
-                    <img className="logo" src="/images/logo.png" alt="logo"/>
+                    <img className="logo" src="/images/logo-msk.webp" alt="logo"/>
                 </Link>
 
                 {/*<Box component="nav" sx={{display: {xs: 'none', sm: 'flex'}, gap: {sm: '10px', md: '15px'}}}>
@@ -64,8 +64,8 @@ export const DesktopHeader = () => {
                     <Typography
                         sx={{
                             color: 'var(--main-color)',
-                            fontSize: 16,
-                            fontWeight: 500,
+                            fontSize: 20,
+                            fontWeight: 600,
                             textAlign: 'center'
                         }}
                     >
@@ -83,7 +83,7 @@ export const DesktopHeader = () => {
                         <Typography
                             sx={{
                                 color: 'var(--red)',
-                                fontSize: 18,
+                                fontSize: 20,
                                 fontWeight: 600,
                                 textAlign: 'center',
                                 whiteSpace: 'nowrap'

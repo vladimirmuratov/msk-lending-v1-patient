@@ -19,7 +19,12 @@ export const ContactBanner = ({isMobile = false}) => {
             <Box sx={{display: 'flex', alignItems: 'center'}}>
                 <Link
                     href={`tel:${phoneNumber}`}
-                    sx={{color: 'var(--red)', fontSize: {xs: 12, sm: 14, md: 16}, fontWeight: 500, textDecorationColor: 'var(--red)'}}>{phoneNumber}</Link>
+                    sx={{
+                        color: 'var(--red)',
+                        fontSize: {xs: 12, sm: 14, md: 16},
+                        fontWeight: 500,
+                        textDecoration: 'none'
+                }}>{phoneNumber}</Link>
                 <Typography sx={{color: color}}>&nbsp;|&nbsp;</Typography>
                 <Typography sx={{color: color, fontSize: {xs: 12, sm: 14, md: 16}}}>Круглосуточно 24/7</Typography>
             </Box>
