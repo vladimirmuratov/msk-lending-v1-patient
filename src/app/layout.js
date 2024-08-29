@@ -13,7 +13,8 @@ const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
 export const metadata = {
     title: 'МСК-Групп',
-    description: 'Платная госпитализация в федеральные лечебные учреждения Москвы. Платная госпитализация без полиса ОМС'
+    description: 'Платная госпитализация в федеральные лечебные учреждения Москвы. Уход за тяжелобольными пациентами',
+    keywords: 'платная госпитализация в москве, скорая помощь, уход за тяжелобольными пациентами'
 }
 
 export default function RootLayout({children}) {
