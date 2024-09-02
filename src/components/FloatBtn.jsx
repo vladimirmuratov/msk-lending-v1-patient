@@ -1,5 +1,5 @@
 import {Fab} from '@mui/material'
-import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled'
 
 export const FloatBtn = ({handleOpen}) => {
     return (
