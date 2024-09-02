@@ -7,13 +7,15 @@ import {useRouter} from 'next/navigation'
 
 export const Banner = () => {
     const router = useRouter()
-    const [isMobile, setMobile] = useState(false)
+    const [isMobile, setMobile] = useState(true)
 
     useEffect(() => {
         const os = navigator.userAgentData.platform
 
         if (os === 'Android' || os === 'iOS') {
             setMobile(true)
+        } else {
+            setMobile(false)
         }
 
     }, [])
@@ -25,7 +27,7 @@ export const Banner = () => {
             sx={{
                 position: 'relative',
                 marginBottom: {xs: '25px', sm: '50px'}
-        }}
+            }}
         >
             <img className="banner" src="/images/images-for-landings/3.webp" alt="banner"/>
             <Box sx={{
