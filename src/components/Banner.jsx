@@ -4,6 +4,7 @@ import {Box, Button, Typography} from '@mui/material'
 import {phoneNumber} from '@/config'
 import {useEffect, useState} from 'react'
 import {useRouter} from 'next/navigation'
+import SocialBlock from '@/components/SocialBlock'
 
 export const Banner = () => {
     const router = useRouter()
@@ -26,7 +27,7 @@ export const Banner = () => {
             className="banner-container"
             sx={{
                 position: 'relative',
-                marginBottom: {xs: '25px', sm: '50px'}
+                // marginBottom: {xs: '25px', sm: '50px'}
             }}
         >
             <img className="banner" src="/images/images-for-landings/3.webp" alt="banner"/>
@@ -51,17 +52,25 @@ export const Banner = () => {
                 </Typography>
 
                 {isMobile
-                    ? <Button
-                        onClick={() => router.push(`tel:${phoneNumber}`)}
-                        variant="contained"
-                        color="error"
-                        size="large"
-                        sx={{
-                            display: isMobile ? 'block' : 'none'
-                        }}
+                    ? (<Box
+                    sx={{
+                        // border: '1px solid red',
+                        display: 'inline'
+                    }}
                     >
-                        Позвонить
-                    </Button>
+                        <Button
+                            onClick={() => router.push(`tel:${phoneNumber}`)}
+                            variant="contained"
+                            color="error"
+                            size="large"
+                            sx={{
+                                display: isMobile ? 'block' : 'none'
+                            }}
+                        >
+                            Позвонить
+                        </Button>
+                        <SocialBlock className='banner-social-mobile'/>
+                    </Box>)
                     : <Typography
                         sx={{
                             color: 'var(--red)',

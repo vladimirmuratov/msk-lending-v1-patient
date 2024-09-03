@@ -3,13 +3,14 @@ import {email, phoneNumber} from '@/config'
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
+import SocialBlock from '@/components/SocialBlock'
 
 export const ContactsBlock = () => {
     return (
         <Box
             component="section"
             id='contact'
-            sx={{scrollMarginTop: {xs: '120px', sm: '50px'}, paddingX: '32px', paddingY: {xs: '25px', sm: '50px'}, color: 'var(--black)'}}
+            sx={{scrollMarginTop: {xs: '120px', sm: '50px'}, paddingX: '12px', paddingY: {xs: '25px', sm: '50px'}, color: 'var(--black)'}}
         >
             <Typography variant="h4" sx={{marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>Контакты</Typography>
 
@@ -27,12 +28,16 @@ export const ContactsBlock = () => {
                         <AlternateEmailIcon sx={{color: 'var(--main-color)'}}/>
                         <Link href={`mailto:${email}`} sx={{fontSize: {xs: '14px', sm: '16px'}}}>{email}</Link>
                     </Box>
+
                     <Box sx={{paddingLeft: '34px'}}>
                         <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>ООО "МСК"</Typography>
                         <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>ИНН: 9725116009</Typography>
                         <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>КПП: 772501001</Typography>
                         <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>ОГРН: 1237700147343</Typography>
                     </Box>
+
+                    <SocialBlock className='banner-social-mobile'/>
+
                 </Box>
                 <Box>
                     {/*<iframe
