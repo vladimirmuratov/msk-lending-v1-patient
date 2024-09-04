@@ -6,6 +6,8 @@
     --white: #ffffff;
     --gray: gray;
 
+    --index: calc(1vh + 1vw);
+
     --color-primary: #f6aca2;
     --color-secondary: #f49b90;
     --color-tertiary: #f28b7d;
@@ -141,7 +143,7 @@ a {
 
 @media (min-width: 600px) {
     .banner-container {
-        margin-top: 0;
+        margin-top: 95px;
     }
 }
 
