@@ -35,10 +35,10 @@ export const Banner = () => {
                 sx={{
                     width: '100%',
                     height: {
-                        xs: 'calc(var(--index) * 19)',
+                        xs: 'calc(var(--index) * 22)',
                         sm: 'calc(var(--index) * 26)',
-                        md: 'calc(var(--index) * 33)',
-                        lg: 'calc(var(--index) * 33)'
+                        md: 'calc(var(--index) * 27)',
+                        lg: 'calc(var(--index) * 23)'
                     },
                     backgroundImage: `url(/images/images-for-landings/3.webp)`,
                     backgroundSize: 'cover',
