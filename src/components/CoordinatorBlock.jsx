@@ -9,7 +9,7 @@ export const CoordinatorBlock = () => (
         }}
     >
         <Typography
-            variant="h4"
+            variant="h2"
             sx={{
                 marginBottom: '20px',
                 fontSize: {xs: '28px', sm: '34px'},
