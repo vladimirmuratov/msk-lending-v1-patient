@@ -1,29 +1,31 @@
-import {Box, Typography} from '@mui/material'
-import {BaseAccordionItem} from '@/components/base/Accordion/BaseAccordionItem'
+import { Box, Typography } from '@mui/material';
+import { BaseAccordionItem } from '@/components/base/Accordion/BaseAccordionItem';
 
-export const BaseAccordion = ({id = '', title, items = []}) => {
+export const BaseAccordion = ({ id = '', title, items = [] }) => {
 
     return (
         <Box
             component="section"
             id={id}
             sx={{
-                scrollMarginTop: {xs: '120px', sm: '50px'},
+                scrollMarginTop: { xs: '120px', sm: '50px' },
                 paddingX: '12px',
-                paddingY: {xs: '25px', sm: '50px'},
+                paddingY: { xs: '25px', sm: '50px' },
                 color: 'var(--black)'
             }}
         >
-            <Typography variant="h2" sx={{
-                marginBottom: '20px',
-                fontSize: {xs: '22px', sm: '34px'},
-                fontWeight: 500
-            }}>{title}</Typography>
+            <Typography
+                variant="h2"
+                sx={{
+                    marginBottom: '20px',
+                    fontSize: { xs: '22px', sm: '34px' },
+                    fontWeight: 500
+                }}>{title}</Typography>
 
             <Box>
-                {items.map((item) => <BaseAccordionItem key={item.id} {...item}/>)}
+                {items.map((item) => <BaseAccordionItem key={item.id} {...item} />)}
             </Box>
 
         </Box>
-    )
-}
+    );
+};
