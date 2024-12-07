@@ -14,7 +14,7 @@ export const AboutBlock = () => {
         >
 
             <Typography variant="h2"
-                        sx={{ marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>
+                        sx={{ color: 'var(--main-color)', marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>
                 О нас
             </Typography>
 
@@ -25,7 +25,7 @@ export const AboutBlock = () => {
                     // marginBottom: '10px'
                 }}
             >
-                Десять лет безупречной работы московской компании МСК-групп подразумевают предоставление особого спектра
+                Десять лет безупречной работы московской компании <Box component="span" sx={{ fontWeight: 600,  color: 'var(--main-color)', }}>МСК-Групп</Box> подразумевают предоставление особого спектра
                 услуг по срочному размещению и быстрому транспортированию больных в ведущие клиники столицы,
                 круглосуточно.
             </Typography>

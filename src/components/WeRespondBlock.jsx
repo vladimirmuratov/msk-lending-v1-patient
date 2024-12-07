@@ -13,9 +13,9 @@ export const WeRespondBlock = () => {
             }}
         >
 
-            <Typography variant="h2" sx={{marginBottom: '20px', fontSize: {xs: '22px', sm: '34px'}, fontWeight: 500}}>Мы
-                отвечаем
-                за:</Typography>
+            <Typography variant="h2" sx={{ color: 'var(--main-color)',marginBottom: '20px', fontSize: {xs: '22px', sm: '34px'}, fontWeight: 500}}>
+                Мы отвечаем за:
+            </Typography>
 
             <Box sx={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--main-color)'}}/>
