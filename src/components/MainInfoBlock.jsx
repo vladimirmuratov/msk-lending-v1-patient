@@ -71,7 +71,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p"
+                    <Typography variant='h3'
                                 sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Профессиональная
                         медицинская
                         команда</Typography>
@@ -86,7 +86,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p"
+                    <Typography variant='h3'
                                 sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Инновационное
                         оснащение</Typography>
                 </Box>
@@ -99,7 +99,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p"
+                    <Typography variant='h3'
                                 sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Персонализированный
                         подход к
                         каждому</Typography>
@@ -113,7 +113,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p"
+                    <Typography variant='h3'
                                 sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Палаты
                         для комфорта и
                         восстановления</Typography>
@@ -128,7 +128,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p"
+                    <Typography variant='h3'
                                 sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Полный
                         спектр медицинской
                         помощи</Typography>
@@ -143,7 +143,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p"
+                    <Typography variant='h3'
                                 sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Помощь
                         в
                         госпитализации</Typography>
@@ -157,7 +157,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p"
+                    <Typography variant='h3'
                                 sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Открытость
                         финансовых
                         условий</Typography>
