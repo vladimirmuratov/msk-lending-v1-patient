@@ -12,7 +12,7 @@ import { TextBlock } from '@/components/TextBlock';
 import { ContactsBlock } from '@/components/ContactsBlock';
 import { FormAction } from '@/components/FormAction';
 import { MainInfoBlock } from '@/components/MainInfoBlock';
-// import { CoordinatorBlock } from '@/components/CoordinatorBlock';
+import { CoordinatorBlock } from '@/components/CoordinatorBlock';
 import PhoneBlock from '@/components/PhoneBlock';
 import { Suspense } from 'react';
 import { Metrika } from '@/components/Metrika';
@@ -43,7 +43,7 @@ export default function Home() {
                 <DirectionsOfHospitalizationBlock />
                 <PhoneBlock />
                 <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
-                {/*<CoordinatorBlock />*/}
+                <CoordinatorBlock />
                 <PartnersBlock />
                 <PhoneBlock />
                 <BaseAccordion id="service" title="Услуги" items={services} />
