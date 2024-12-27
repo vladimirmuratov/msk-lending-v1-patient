@@ -17,9 +17,6 @@ export const metadata = {
     keywords: ['тяжелый случай пациент', 'пациент находится в тяжелом состоянии', 'уход за тяжелым пациентом', 'скорая помощь тяжелый пациент'],
     other: {
         ['yandex-verification']: '8a67daf7ca228bdf',
-    },
-    alternates: {
-        canonical: 'https://patient.mskdoctor.ru/'
     }
 };
 

@@ -23,7 +23,7 @@ export default function Home() {
             <PhoneBlock />
             <MainInfoBlock />
             <PhoneBlock />
-            <AboutBlock />
+            {/*<AboutBlock />*/}
             <WhyWeBlock />
             <PhoneBlock />
             <WeRespondBlock />
