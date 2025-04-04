@@ -18,9 +18,9 @@ export const CoordinatorBlock = () => (
                 color: 'var(--main-color)'
             }}
         >
-            <Box component='span' sx={{fontWeight: 600}}>МСК-Групп</Box>
+            <Box component='span' sx={{fontWeight: 600, color: 'var(--red)'}}>Медицинская Сервисная Компания</Box>
             <br/>
-            Официальный координатор по госпитализации в федеральные медицинские учреждения г.Москвы
+            официальный координатор по госпитализации в федеральные медицинские учреждения г. Москвы
         </Typography>
         <Typography
             component="p"
@@ -30,7 +30,7 @@ export const CoordinatorBlock = () => (
                 textAlign: 'center'
             }}
         >
-            При обращении в сервис <Box component='span' sx={{fontWeight: 600}}>МСК-Групп</Box> - все расчеты ведутся по официальным ценам с конкретной медицинской
+            При обращении в сервис <Box component='span' sx={{fontWeight: 600, color: 'var(--red)'}}>МСК</Box> - все расчеты ведутся по официальным ценам с конкретной медицинской
             организацией
         </Typography>
     </Box>

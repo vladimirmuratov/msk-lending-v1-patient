@@ -12,17 +12,25 @@ import './globals.css';
 const montserrat = Montserrat({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata = {
-    title: 'Госпитализация тяжелобольных. 8 (499) 719-81-00, 24/7',
-    description: 'Госпитализация тяжелобольных пациентов. 10 лет опыта. 20 клиник-партнеров. Госпитализация 24/7. +7 (499) 719-81-00',
+    title: 'Медицинская Сервисная Компания. Госпитализация тяжелого больного. 8 (499) 719-81-00, 24/7',
+    description: 'Госпитализация тяжелобольного пациента требует тщательного выбора клиники и специалистов, оперативной организации всех медицинских процедур и круглосуточного контроля',
     keywords: ['тяжелый случай пациент', 'пациент находится в тяжелом состоянии', 'уход за тяжелым пациентом', 'скорая помощь тяжелый пациент'],
     other: {
         ['yandex-verification']: '8a67daf7ca228bdf',
+    },
+    openGraph: {
+        title: 'Медицинская Сервисная Компания. Госпитализация тяжелого больного. 8 (499) 719-81-00, 24/7',
+        description: 'Госпитализация тяжелобольного пациента требует тщательного выбора клиники и специалистов, оперативной организации всех медицинских процедур и круглосуточного контроля',
+        images: ['/images/banner2.webp'],
+        url: 'https://patient.mskdoctor.ru/',
+        type: 'website',
+        locale: 'ru_RU',
     }
 };
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" prefix="og: https://ogp.me/ns#">
         <body className={montserrat.className}>
         <AppRouterCacheProvider>
             <ThemeProvider theme={theme}>

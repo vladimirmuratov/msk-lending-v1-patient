@@ -1,39 +1,37 @@
-import {Box, IconButton, Typography, Link} from '@mui/material'
-import {links, phoneNumber} from '@/config'
-import MenuIcon from '@mui/icons-material/Menu'
-import {ContactBanner} from '@/components/ContactBanner'
-import {useCallback, useEffect, useRef, useState} from 'react'
-import {BaseLink} from '@/components/base/BaseLink'
-import SocialBlock from '@/components/SocialBlock'
+import { Box, Link, Typography } from '@mui/material';
+import { phoneNumber } from '@/config';
+import { ContactBanner } from '@/components/ContactBanner';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import SocialBlock from '@/components/SocialBlock';
 
 export const DesktopHeader = () => {
-    const scrollContainer = useRef()
-    const [position, setPosition] = useState('relative')
+    const scrollContainer = useRef();
+    const [position, setPosition] = useState('relative');
 
     const onScroll = useCallback(() => {
-        const {top, bottom} = scrollContainer.current.getBoundingClientRect()
+        const { top, bottom } = scrollContainer.current.getBoundingClientRect();
         if (bottom <= 0) {
-            setPosition('fixed')
+            setPosition('fixed');
         } else {
-            setPosition('relative')
+            setPosition('relative');
         }
-    }, [])
+    }, []);
 
     useEffect(() => {
-        window.addEventListener('scroll', onScroll, {passive: true})
+        window.addEventListener('scroll', onScroll, { passive: true });
 
         return () => {
-            window.removeEventListener('scroll', onScroll)
-        }
-    }, [])
+            window.removeEventListener('scroll', onScroll);
+        };
+    }, []);
 
     return (
         <Box
             ref={scrollContainer}
-            sx={{position: 'relative', zIndex: 1}}
+            sx={{ position: 'relative', zIndex: 1 }}
         >
 
-            <ContactBanner/>
+            <ContactBanner />
 
             <Box
                 component="header"
@@ -55,7 +53,7 @@ export const DesktopHeader = () => {
                     boxShadow: '0 2px 4px lightgray'
                 }}>
                 <Link href="/">
-                    <img className="logo" src="/images/logo-msk.webp" alt="logo"/>
+                    <img className="logo" src="/images/logo-msk.webp" alt="logo" />
                 </Link>
 
                 {/*<Box component="nav" sx={{display: {xs: 'none', sm: 'flex'}, gap: {sm: '10px', md: '15px'}}}>
@@ -71,15 +69,20 @@ export const DesktopHeader = () => {
                             textAlign: 'center'
                         }}
                     >
-                        Официальный координатор по госпитализации в федеральные медицинские учреждения г.Москвы
+                        Официальный координатор по госпитализации <Box
+                        component="span"
+                        sx={{
+                            display: { xs: 'none', md: 'block' }
+                        }}
+                    >в федеральные медицинские учреждения г. Москвы</Box>
                     </Typography>
                 </Box>
 
                 <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                }}
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                    }}
                 >
                     <Link
                         href={`tel:${phoneNumber}`}
@@ -100,7 +103,7 @@ export const DesktopHeader = () => {
                         </Typography>
                     </Link>
 
-                    <SocialBlock/>
+                    <SocialBlock />
 
                 </Box>
 
@@ -109,5 +112,5 @@ export const DesktopHeader = () => {
                 </IconButton>*/}
             </Box>
         </Box>
-    )
-}
+    );
+};

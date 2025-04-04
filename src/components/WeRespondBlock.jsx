@@ -25,29 +25,26 @@ export const WeRespondBlock = () => {
             <Box sx={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
 
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Выбор оптимума среди
-                        медицинских учреждений</Typography>
+                    <CheckIcon sx={{ color: 'var(--red)' }} />
+                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Выбор оптимальных медицинских учреждений</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
+                    <CheckIcon sx={{ color: 'var(--red)' }} />
                     <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Детальная проверка
                         качества и ценовой политики</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
+                    <CheckIcon sx={{ color: 'var(--red)' }} />
                     <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Врачебный надзор на
                         протяжении всего лечения</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Комплексное
-                        индивидуально ориентированное обслуживание</Typography>
+                    <CheckIcon sx={{ color: 'var(--red)' }} />
+                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Индивидуальное обслуживание</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Полномасштабную
-                        юридическую защиту</Typography>
+                    <CheckIcon sx={{ color: 'var(--red)' }} />
+                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Юридическую защиту</Typography>
                 </Box>
 
             </Box>
