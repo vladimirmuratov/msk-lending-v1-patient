@@ -1,7 +1,8 @@
 import {Box, IconButton, Link, Typography} from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
+// import MenuIcon from '@mui/icons-material/Menu'
 import {ContactBanner} from '@/components/ContactBanner'
-import {phoneNumber} from '@/config'
+// import {phoneNumber} from '@/config'
+import SocialBlock from '@/components/SocialBlock';
 
 export const MobileHeader = ({toggleDrawer, isMobile}) => {
     return (
@@ -25,7 +26,6 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                         color: 'var(--white)'
                     }}
                 >
-                    {/*<img className="logo" src="/images/logo-white.png" alt="logo"/>*/}
                     <Typography
                         sx={{
                             fontSize: 18,
@@ -55,9 +55,11 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                     </Link>
                 </Box>*/}
 
-                <IconButton onClick={toggleDrawer(true)}>
+                {/*<IconButton onClick={toggleDrawer(true)}>
                     <MenuIcon sx={{color: '#fff'}}/>
-                </IconButton>
+                </IconButton>*/}
+
+                <SocialBlock isMobile={true} color='var(--white)' className='mobile-header-social-block'/>
             </Box>
         </Box>
     )

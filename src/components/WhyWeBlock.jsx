@@ -1,6 +1,8 @@
 import { Box, Typography } from '@mui/material';
+import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
+import { memo } from 'react';
 
-export const WhyWeBlock = () => {
+export const WhyWeBlock = memo(() => {
     return (
         <Box
             component="section"
@@ -13,26 +15,65 @@ export const WhyWeBlock = () => {
             }}
         >
 
-            <Typography variant="h2"
-                        sx={{
-                            color: 'var(--main-color)',
-                            marginBottom: '20px',
-                            fontSize: { xs: '22px', sm: '34px' },
-                            fontWeight: 500
-                        }}>
-                Почему именно мы?
+            <Typography
+                variant="h2"
+                sx={{
+                    color: 'var(--red)',
+                    marginBottom: '20px',
+                    fontSize: { xs: '22px', sm: '34px' },
+                    fontWeight: 300,
+
+                }}
+            >
+                Почему выбирают нас?
             </Typography>
 
-            <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '10px' }}>
-                Наша организация в Москве и Подмосковье специализируется на решении вопросов госпитализации. Мы обладаем
-                экспертными знаниями о лучших клиниках и медицинских специалистах региона, а также актуальной
-                информацией о стоимости индивидуальных палат. Мы знаем профильные учреждения для различных заболеваний.
-            </Typography>
-            <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                В случае отказа от госпитализации в других медицинских центрах, мы берем на себя задачу организации
-                госпитализации. Особое внимание уделяется госпитализации пожилых граждан, включая круглосуточное
-                сопровождение <Box component="span" sx={{ color: 'var(--red)', fontWeight: 600 }}>24/7</Box>.
-            </Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px', }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <CheckBoxOutlinedIcon sx={{ color: 'var(--red)' }} />
+                    <Typography
+                        variant="h3"
+                        sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 400 }}>
+                        Опыт более 10 лет в медицинской логистике
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <CheckBoxOutlinedIcon sx={{ color: 'var(--red)' }} />
+                    <Typography
+                        variant="h3"
+                        sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 400 }}>
+                        Сотрудничество с ведущими клиниками Москвы
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <CheckBoxOutlinedIcon sx={{ color: 'var(--red)' }} />
+                    <Typography
+                        variant="h3"
+                        sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 400 }}>
+                        Собственный автопарк — от санитарных машин до реанимобилей
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <CheckBoxOutlinedIcon sx={{ color: 'var(--red)' }} />
+                    <Typography
+                        variant="h3"
+                        sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 400 }}>
+                        Высококвалифицированные врачи и медперсонал
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <CheckBoxOutlinedIcon sx={{ color: 'var(--red)' }} />
+                    <Typography
+                        variant="h3"
+                        sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 400 }}>
+                        Работаем 24/7, включая праздники и выходные
+                    </Typography>
+                </Box>
+            </Box>
         </Box>
     );
-};
+});

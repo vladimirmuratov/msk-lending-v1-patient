@@ -1,12 +1,17 @@
 import React from 'react';
 import { Box, Link } from '@mui/material';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { email, phoneTelegram, phoneWhatsApp } from '@/config';
+import { EmailIcon } from '@/components/icons/EmailIcon';
+import { TelegramIcon } from '@/components/icons/TelegramIcon';
+import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
-const SocialBlock = ({ className = '' }) => {
+const SocialBlock = ({ className = '', color= 'var(--main-color)', isMobile = false }) => {
+
     return (
         <Box
             sx={{
+                marginTop: isMobile ? 0 : '5px',
                 width: '100%',
                 display: 'flex',
                 alignItems: 'center',
@@ -14,21 +19,23 @@ const SocialBlock = ({ className = '' }) => {
             }}
             className={className}
         >
-            <Link target="_blank" href={`https://wa.me/${phoneWhatsApp}`}>
-                <Image
-                    src="/images/social/whatsapp.svg"
+            <Link className='link' target="_blank" href={`https://wa.me/${phoneWhatsApp}`}>
+                <WhatsAppIcon color={color}/>
+                {/*<Image
+                    src="/images/social/new/whatsapp.svg"
                     alt="icon"
                     width={30}
                     height={30}
-                />
+                />*/}
             </Link>
-            <Link target="_blank" href={`https://t.me/${phoneTelegram}`}>
-                <Image
-                    src="/images/social/telegram.svg"
+            <Link className='link' target="_blank" href={`https://t.me/${phoneTelegram}`}>
+                <TelegramIcon color={color}/>
+                {/*<Image
+                    src="/images/social/new/telegram.svg"
                     alt="icon"
                     width={30}
                     height={30}
-                />
+                />*/}
             </Link>
             {/*<Link href={`viber://add?number=${phoneViber}`}>
                 <Image
@@ -38,13 +45,15 @@ const SocialBlock = ({ className = '' }) => {
                     height={30}
                 />
             </Link>*/}
-            <Link href={`mailto:${email}`}>
-                <Image
-                    src="/images/social/email.svg"
+            <Link className='link' href={`mailto:${email}`}>
+                <EmailIcon color={color}/>
+                {/*<Image
+                    className="emailIcon"
+                    src="/images/social/new/email.svg"
                     alt="icon"
                     width={30}
                     height={30}
-                />
+                />*/}
             </Link>
         </Box>
     );

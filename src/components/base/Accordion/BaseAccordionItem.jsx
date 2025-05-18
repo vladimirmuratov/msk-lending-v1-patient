@@ -1,7 +1,8 @@
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { memo } from 'react';
 
-export const BaseAccordionItem = ({ id, question, answer }) => {
+export const BaseAccordionItem = memo(({ id, question, answer }) => {
 
     return (
         <Accordion>
@@ -13,7 +14,7 @@ export const BaseAccordionItem = ({ id, question, answer }) => {
             >
                 <Typography
                     variant="h3"
-                    sx={{ fontWeight: 500, fontSize: { xs: 18, sm: 20 } }}
+                    sx={{ fontWeight: 400, fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', }}
                 >
                     {question}
                 </Typography>
@@ -29,4 +30,4 @@ export const BaseAccordionItem = ({ id, question, answer }) => {
             </AccordionDetails>
         </Accordion>
     );
-};
+});

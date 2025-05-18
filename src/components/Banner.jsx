@@ -1,25 +1,24 @@
-'use client'
+'use client';
 
-import {Box, Button, Typography} from '@mui/material'
-import {phoneNumber} from '@/config'
-import {useEffect, useState} from 'react'
-import {useRouter} from 'next/navigation'
-import SocialBlock from '@/components/SocialBlock'
+import { Box, Button, Typography } from '@mui/material';
+import { phoneNumber } from '@/config';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export const Banner = () => {
-    const router = useRouter()
-    const [isMobile, setMobile] = useState(true)
+    const router = useRouter();
+    const [isMobile, setMobile] = useState(true);
 
     useEffect(() => {
-        const os = navigator.userAgentData.platform
+        const os = navigator.userAgentData.platform;
 
         if (os === 'Android' || os === 'iOS') {
-            setMobile(true)
+            setMobile(true);
         } else {
-            setMobile(false)
+            setMobile(false);
         }
 
-    }, [])
+    }, []);
 
     return (
         <Box
@@ -28,8 +27,8 @@ export const Banner = () => {
             sx={{
                 position: 'relative',
                 // marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
-                marginTop: isMobile ? {xs: '110px', sm: 0} : 0,
-                paddingBottom: isMobile ? {xs: '25px', sm: 0} : 0
+                marginTop: isMobile ? { xs: '110px', sm: 0 } : 0,
+                paddingBottom: isMobile ? { xs: '25px', sm: 0 } : 0
             }}
         >
 
@@ -47,32 +46,34 @@ export const Banner = () => {
                     backgroundPosition: 'center'
                 }}
             />
-            <Box sx={{
-                position: 'absolute',
-                // top: {xs: '10%', sm: '10%'},
-                top: '50%',
-                transform: 'translateY(-50%)',
-                left: '5%',
-            }}>
+            <Box
+                sx={{
+                    position: 'absolute',
+                    // top: {xs: '10%', sm: '10%'},
+                    top: '40%',
+                    transform: 'translateY(-50%)',
+                    left: '5%',
+                }}
+            >
                 <Typography
                     variant="h1"
                     sx={{
-                        fontSize: {xs: 24, sm: 40, md: 60},
+                        fontSize: { xs: 24, sm: 40, md: 60 },
                         lineHeight: 1,
                         fontWeight: 600,
                         color: 'var(--main-color)',
                         textShadow: '2px 2px 2px white',
-                        marginBottom: {xs: '5px', sm: '10px'}
+                        marginBottom: { xs: '10px', sm: '15px' }
                     }}>
-                    Госпитализация<br/>
-                    тяжелого<br/>
+                    Госпитализация<br />
+                    тяжелого<br />
                     больного
                 </Typography>
 
                 {isMobile
                     ? (<Box
                         sx={{
-                            display: 'inline'
+                            display: 'inline',
                         }}
                     >
                         <Button
@@ -88,14 +89,12 @@ export const Banner = () => {
                             Позвонить
                         </Button>
 
-                        <SocialBlock className="banner-social-mobile"/>
-
                     </Box>)
                     : <Typography
                         sx={{
                             color: 'var(--red)',
                             display: isMobile ? 'none' : 'block',
-                            fontSize: {xs: 16, sm: 32, md: 62},
+                            fontSize: { xs: 16, sm: 32, md: 62 },
                             fontWeight: 600,
                             textShadow: '0px 4px 4px lightgray',
                         }}>{phoneNumber}</Typography>
@@ -103,5 +102,5 @@ export const Banner = () => {
             </Box>
 
         </Box>
-    )
-}
+    );
+};

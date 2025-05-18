@@ -53,9 +53,7 @@ export const MessageForm = ({handleClose, onSendForm, onError}) => {
             <Box sx={{display: 'flex'}}>
                 <Checkbox checked={checked} onChange={handleChange} sx={{alignSelf: 'start'}}/>
                 <Typography sx={{fontSize: 11, lineHeight: '11px'}}>
-                    Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в
-                    соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и
-                    для целей, определенных в Согласии на обработку персональных данных
+                    Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных.
                 </Typography>
             </Box>
 

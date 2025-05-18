@@ -1,10 +1,14 @@
-import React from 'react'
-import {Box, Link, Typography} from '@mui/material'
-import {phoneNumber} from '@/config'
+import React from 'react';
+import { Box, Link, Typography } from '@mui/material';
+import { phoneNumber } from '@/config';
 
 const PhoneBlock = () => {
     return (
-        <Box>
+        <Box
+            sx={{
+                paddingY: { xs: '25px', sm: '50px' }
+            }}
+        >
             <Link
                 href={`tel:${phoneNumber}`}
                 sx={{
@@ -14,7 +18,7 @@ const PhoneBlock = () => {
                 <Typography
                     variant="h2"
                     sx={{
-                        fontSize: {xs: '28px', sm: '34px'},
+                        fontSize: { xs: '28px', sm: '34px' },
                         fontWeight: 600,
                         color: 'var(--red)',
                         textAlign: 'center',
@@ -26,7 +30,7 @@ const PhoneBlock = () => {
                 >{phoneNumber}</Typography>
             </Link>
         </Box>
-    )
-}
+    );
+};
 
-export default React.memo(PhoneBlock)
+export default React.memo(PhoneBlock);

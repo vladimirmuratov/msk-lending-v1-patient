@@ -1,7 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import { BaseAccordionItem } from '@/components/base/Accordion/BaseAccordionItem';
+import { memo } from 'react';
 
-export const BaseAccordion = ({ id = '', title, items = [] }) => {
+export const BaseAccordion = memo(({ id = '', title, items = [] }) => {
 
     return (
         <Box
@@ -17,10 +18,10 @@ export const BaseAccordion = ({ id = '', title, items = [] }) => {
             <Typography
                 variant="h2"
                 sx={{
-                    color: 'var(--main-color)',
+                    color: 'var(--red)',
                     marginBottom: '20px',
                     fontSize: { xs: '22px', sm: '34px' },
-                    fontWeight: 500
+                    fontWeight: 300
                 }}>{title}</Typography>
 
             <Box>
@@ -29,4 +30,4 @@ export const BaseAccordion = ({ id = '', title, items = [] }) => {
 
         </Box>
     );
-};
+});

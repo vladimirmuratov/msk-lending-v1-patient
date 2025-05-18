@@ -1,9 +1,6 @@
 import { Banner } from '@/components/Banner';
-import { CardsBlock } from '@/components/CardsBlock';
-import { AboutBlock } from '@/components/AboutBlock';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
 import { WeRespondBlock } from '@/components/WeRespondBlock';
-// import {WhatWeOfferBlock} from '@/components/WhatWeOfferBlock'
 import { DirectionsOfHospitalizationBlock } from '@/components/DirectionsOfHospitalizationBlock';
 import { BaseAccordion } from '@/components/base/Accordion/BaseAccordion';
 import { PartnersBlock } from '@/components/PartnersBlock';
@@ -19,8 +16,8 @@ export default function Home() {
     return (
         <main style={{ position: 'relative' }}>
             <Banner />
-            <CardsBlock />
-            <PhoneBlock />
+            {/*<CardsBlock />*/}
+            {/*<PhoneBlock />*/}
             <MainInfoBlock />
             <PhoneBlock />
             {/*<AboutBlock />*/}
