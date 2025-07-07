@@ -66,8 +66,8 @@ export const Banner = () => {
                         marginBottom: { xs: '10px', sm: '15px' }
                     }}>
                     Госпитализация<br />
-                    тяжелого<br />
-                    больного
+                    тяжелобольных<br />
+                    пациентов
                 </Typography>
 
                 {isMobile
