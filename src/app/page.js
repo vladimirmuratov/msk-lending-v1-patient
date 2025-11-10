@@ -1,7 +1,5 @@
 import { Banner } from '@/components/Banner';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
-import { WeRespondBlock } from '@/components/WeRespondBlock';
-import { DirectionsOfHospitalizationBlock } from '@/components/DirectionsOfHospitalizationBlock';
 import { BaseAccordion } from '@/components/base/Accordion/BaseAccordion';
 import { PartnersBlock } from '@/components/PartnersBlock';
 import { faq, services, text1 } from '@/config';
@@ -23,10 +21,10 @@ export default function Home() {
             {/*<AboutBlock />*/}
             <WhyWeBlock />
             <PhoneBlock />
-            <WeRespondBlock />
+            {/*<WeRespondBlock />*/}
             {/*<WhatWeOfferBlock/>*/}
-            <DirectionsOfHospitalizationBlock />
-            <PhoneBlock />
+            {/*<DirectionsOfHospitalizationBlock />*/}
+            {/*<PhoneBlock />*/}
             <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
             <CoordinatorBlock />
             <PartnersBlock />
