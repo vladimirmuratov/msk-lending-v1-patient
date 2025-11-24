@@ -20,16 +20,16 @@ export default function Home() {
             <PhoneBlock />
             {/*<AboutBlock />*/}
             <WhyWeBlock />
-            <PhoneBlock />
+            {/*<PhoneBlock />*/}
             {/*<WeRespondBlock />*/}
             {/*<WhatWeOfferBlock/>*/}
             {/*<DirectionsOfHospitalizationBlock />*/}
             {/*<PhoneBlock />*/}
-            <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
+            {/*<BaseAccordion id="faq" title="Частые вопросы" items={faq} />*/}
             <CoordinatorBlock />
-            <PartnersBlock />
+            {/*<PartnersBlock />*/}
             <PhoneBlock />
-            <BaseAccordion id="service" title="Услуги" items={services} />
+            {/*<BaseAccordion id="service" title="Услуги" items={services} />*/}
             <TextBlock text={text1} />
             <ContactsBlock />
             <FormAction />
