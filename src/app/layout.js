@@ -12,20 +12,23 @@ import './globals.css';
 const montserrat = Montserrat({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata = {
-    metadataBase: new URL('https://patient.mskdoctor.ru'),
+    metadataBase: new URL('https://msk-patient.vercel.app'),
     title: 'Лечение и комплексная помощь тяжёлым пациентам под наблюдением врачей',
     description: 'Медицинская помощь тяжёлым пациентам: лечение, круглосуточное наблюдение, уход и поддержка. Индивидуальные программы и опытные специалисты.',
     keywords: ['госпитализация тяжёлобольного Москва, срочная госпитализация, перевозка лежачего больного, госпитализация с сопровождением, частная госпитализация, реанимобиль Москва, госпитализация после инсульта, госпитализация на дому, госпитализация платно Москва, Медицинская Сервисная Компания'],
     other: {
-        ['yandex-verification']: '8a67daf7ca228bdf',
+        ['yandex-verification']: 'fdc8bdc6469717e4',
     },
     openGraph: {
         title: 'Медицинская Сервисная Компания. Платная госпитализация тяжёлобольных – круглосуточный приём без ожидания. 8 (499) 719-81-00, 24/7',
         description: 'Оперативная госпитализация тяжёлобольных пациентов в федеральную или частную клинику. Круглосуточный приём, комфортные условия, высококвалифицированные врачи.',
         images: ['/images/banner2.webp'],
-        url: 'https://patient.mskdoctor.ru/',
+        url: 'https://msk-patient.vercel.app/',
         type: 'website',
         locale: 'ru_RU',
+    },
+    alternates: {
+        canonical: 'https://msk-patient.vercel.app',
     }
 };
 
