@@ -54,7 +54,7 @@ export const ContactsBlock = memo(() => {
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ИНН: 9725116009</Typography>
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>КПП: 772501001</Typography>
                         <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ОГРН: 1237700147343</Typography>
-                        <SocialBlock className="banner-social-mobile" />
+                        <SocialBlock className="banner-social-mobile" style={{marginTop: '10px'}} />
                     </Box>
 
 

@@ -1,41 +1,38 @@
 import React from 'react';
 import { Box, Link } from '@mui/material';
-// import Image from 'next/image';
-import { email, phoneTelegram, phoneWhatsApp } from '@/config';
+import { email, maxLink, telegramLink } from '@/config';
 import { EmailIcon } from '@/components/icons/EmailIcon';
 import { TelegramIcon } from '@/components/icons/TelegramIcon';
-import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { MaxIcon } from '@/components/icons/MaxIcon';
+// import Image from 'next/image';
 
-const SocialBlock = ({ className = '', color= 'var(--main-color)', isMobile = false }) => {
+const SocialBlock = ({ className = '', color = 'var(--main-color)', style = {} }) => {
 
     return (
         <Box
             sx={{
-                marginTop: isMobile ? 0 : '5px',
                 width: '100%',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-around'
+                justifyContent: 'space-around',
+                ...style
             }}
             className={className}
         >
-            <Link className='link' target="_blank" href={`https://wa.me/${phoneWhatsApp}`}>
+            {/*<Link className='link' target="_blank" href={`https://wa.me/${phoneWhatsApp}`}>
                 <WhatsAppIcon color={color}/>
-                {/*<Image
+                <Image
                     src="/images/social/new/whatsapp.svg"
                     alt="icon"
                     width={30}
                     height={30}
-                />*/}
+                />
+            </Link>*/}
+            <Link className="link" target="_blank" href={maxLink}>
+                <MaxIcon color={color} />
             </Link>
-            <Link className='link' target="_blank" href={`https://t.me/${phoneTelegram}`}>
-                <TelegramIcon color={color}/>
-                {/*<Image
-                    src="/images/social/new/telegram.svg"
-                    alt="icon"
-                    width={30}
-                    height={30}
-                />*/}
+            <Link className="link" target="_blank" href={telegramLink}>
+                <TelegramIcon color={color} />
             </Link>
             {/*<Link href={`viber://add?number=${phoneViber}`}>
                 <Image
@@ -45,8 +42,8 @@ const SocialBlock = ({ className = '', color= 'var(--main-color)', isMobile = fa
                     height={30}
                 />
             </Link>*/}
-            <Link className='link' href={`mailto:${email}`}>
-                <EmailIcon color={color}/>
+            <Link className="link" href={`mailto:${email}`}>
+                <EmailIcon color={color} />
                 {/*<Image
                     className="emailIcon"
                     src="/images/social/new/email.svg"

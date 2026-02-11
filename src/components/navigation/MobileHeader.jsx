@@ -59,7 +59,7 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                     <MenuIcon sx={{color: '#fff'}}/>
                 </IconButton>*/}
 
-                <SocialBlock isMobile={true} color='var(--white)' className='mobile-header-social-block'/>
+                <SocialBlock color='var(--white)' className='mobile-header-social-block'/>
             </Box>
         </Box>
     )
